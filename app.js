@@ -190,5 +190,3 @@ app.get("/checkout", (req, res) => {
 });
 
 module.exports = app;
-
-app.listen(4000);
