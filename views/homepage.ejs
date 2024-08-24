@@ -20,8 +20,51 @@
             <a href="https://www.foodpanda.pk/">ORDER</a>
             <a href="/menu">MENU</a>
             <a href="/about">ABOUT</a>
-            <a href="/contact">CONTACT</a>
+            <a href="#" class="nav-btn open-btn">CONTACT</a>
         </nav>
+
+        <div class="nav">
+            <button class="nav-btn close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <br><br>
+
+            <div class="content">
+                <h1>CONTACT</h1>
+                <div class="hours margin">
+                    <p>MONDAY - FRIDAY</p>
+                    <p>12:00PM to 9:00PM</p>
+                    <p>SATURDAY - SUNDAY</p>
+                    <p>12:00PM to 10:00PM</p>
+                </div>
+
+                <div class="contact margin">
+                    <a href="#">
+                        <p class="icon"><i class="fa-solid fa-phone"></i></p>
+                        <p><a href="tel:2122607049">Call Now</a></p>
+                        <p>922.194.826.39</p>
+                        <p>922.194.826.38</p>
+                    </a>
+                </div>
+
+                <div class="address margin">
+                    <a href="#">
+                        <p class="icon"><i class="fas fa-map-marker-alt"></i></p>
+                        <p><a href="#">Directions Here</a></p>
+                        <p>140 W4 ST | NYC 10012</p>
+                    </a>
+                </div>
+
+                <div class="mail">
+                    <a href="#">
+                        <p class="icon"><i class="fa-solid fa-envelope"></i></p>
+                        <p><a href="#">Message Here</a></p>
+                        <p>thegreenspoon@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </header>
 
@@ -226,6 +269,20 @@
             Web and Menu designs by Eldric Thornwood
         </div>
     </footer>
+
+    <script>
+        const open_btn = document.querySelector('.open-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const nav = document.querySelector('.nav');
+
+        open_btn.addEventListener('click', () => {
+            nav.classList.add('visible');
+        });
+
+        close_btn.addEventListener('click', () => {
+            nav.classList.remove('visible');
+        });
+    </script>
 
 </body>
 
