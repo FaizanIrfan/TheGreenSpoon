@@ -1,0 +1,58 @@
+[
+    {
+        "id": "s301",
+        "name": "Creole Soul Chicken",
+        "description": "Our signature soy chicken nuggets panko-breaded with Cajun and rosemary seasoning and fried.",
+        "price": "12.00",
+        "image": "/images/menu/creole.webp"
+    },
+    {
+        "id": "s302",
+        "name": "Broccoli and Sweet Potato Tempura",
+        "description": "Deep-fried in a traditional Japanese tempura batter. Served with soy-lime ginger dressing.",
+        "price": "12.00",
+        "image": "/images/menu/tempura.jpeg"
+    },
+    {
+        "id": "s303",
+        "name": "Barbecue Buffalo Wings",
+        "description": "Our famous vegan soy wings marinated in a spiced citrus BBQ sauce.",
+        "price": "17.00",
+        "image": "/images/menu/bbq.webp"
+    },
+    {
+        "id": "s304",
+        "name": "Caribbean Jerk-Spiced Seitan",
+        "description": "Grilled seitan skewers marinated in a spiced lime citrus dressing.",
+        "price": "10.00",
+        "image": "/images/menu/caribbean.webp"
+    },
+    {
+        "id": "s305",
+        "name": "Collard Green Rolls",
+        "description": "Three fried rolls stuffed with sautéed collard greens and soy ham.",
+        "price": "11.00",
+        "image": "/images/menu/collard.webp"
+    },
+    {
+        "id": "s306",
+        "name": "Almond Coconut Chicken",
+        "description": "Crispy soy chicken strips breaded with toasted almonds and shaved coconut.",
+        "price": "14.00",
+        "image": "/images/menu/almond.webp"
+    },
+    {
+        "id": "s307",
+        "name": "Chicken Satay",
+        "description": "Skewered soy chicken charbroiled and marinated in coconut curry seasoning.",
+        "price": "12.00",
+        "image": "/images/menu/chicken.webp"
+    },
+    {
+        "id": "s308",
+        "name": "Bamboo Nuggets",
+        "description": "Garlic soy chicken nuggets fried and served with vidalia onion sauce.",
+        "price": "12.00",
+        "image": "/images/menu/bamboo.webp"
+    }
+]

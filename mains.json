@@ -1,0 +1,58 @@
+[
+    {
+        "id": "m501",
+        "name": "Citrus beef",
+        "description": "Citrus soy beef stir-fried with broccoli, red and yellow peppers, zucchini and yellow squash.",
+        "price": "18.00",
+        "image": "/images/menu/citrus.webp"
+    },
+    {
+        "id": "m502",
+        "name": "Mango Chicken",
+        "description": "Slices of mango, grilled soy chicken, red onions, red and green bell peppers sautéed in a mildly spicy citrus sauce",
+        "price": "18.00",
+        "image": "/images/menu/mango.webp"
+    },
+    {
+        "id": "m503",
+        "name": "Southern Fried Chicken",
+        "description": "Herb-breaded soy chicken and two drumsticks served with your choice of 2 sides.",
+        "price": "22.00",
+        "image": "/images/menu/southern.webp"
+    },
+    {
+        "id": "m504",
+        "name": "Creole Soul Chicken Entree",
+        "description": "Panko-breaded fried soy chicken with Cajun and rosemary seasoning. Served with garlic mashed potatoes and gravy",
+        "price": "18.00",
+        "image": "/images/menu/entree.webp"
+    },
+    {
+        "id": "m505",
+        "name": "Butterfly Soy Chops",
+        "description": "Lightly breaded soy pork chops topped with roasted apples and raisins. Served with sautéed collard greens",
+        "price": "20.00",
+        "image": "/images/menu/butterfly.webp"
+    },
+    {
+        "id": "m506",
+        "name": "Bamboo Curry Chicken",
+        "description": "Sautéed soy chicken and potatoes marinated in a spicy Indian coconut curry sauce",
+        "price": "18.00",
+        "image": "/images/menu/curry.webp"
+    },
+    {
+        "id": "m507",
+        "name": "Dante’s Cuisine",
+        "description": "Black pepper soy beef medallions sautéed in our fresh mushroom sauce. Served with a side of broccoli",
+        "price": "18.00",
+        "image": "/images/menu/dante.webp"
+    },
+    {
+        "id": "m508",
+        "name": "Tonkatsu Chops",
+        "description": "Deep fried gluten pork chops served with garlic mashed potatoes, steamed carrots and broccoli",
+        "price": "17.00",
+        "image": "/images/menu/tonkatsu.webp"
+    }
+]

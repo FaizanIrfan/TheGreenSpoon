@@ -1,0 +1,44 @@
+[
+    {
+        "id": "sb401",
+        "name": "Classic BLT",
+        "description": "Organic tempeh bacon, lettuce, tomato and vegan mayo served on ciabatta bread with fries",
+        "price": "15.00",
+        "image": "/images/menu/classic.webp"
+    },
+    {
+        "id": "sb402",
+        "name": "Bamburger",
+        "description": "Vegan soy beef burger marinated and grilled. Topped with lettuce, tomato and pickles",
+        "price": "10.00",
+        "image": "/images/menu/bamburger.webp"
+    },
+    {
+        "id": "sb403",
+        "name": "Pulled pork sandwich",
+        "description": "Shredded smoked BBQ soy pork, sautéed with caramelized onions and sliced pickles",
+        "price": "15.00",
+        "image": "/images/menu/pulled.webp"
+    },
+    {
+        "id": "sb404",
+        "name": "Chicken cutlet sandwich",
+        "description": "Two breaded fried soy chicken cutlets with dijon mustard, vegan mayo, lettuce and tomato.",
+        "price": "15.00",
+        "image": "/images/menu/cutlet.webp"
+    },
+    {
+        "id": "sb405",
+        "name": "Soul Chicken Sandwich",
+        "description": "Panko-breaded fried soy chicken nuggets with vegan mayo and vidalia dressing, lettuce and tomato.",
+        "price": "15.00",
+        "image": "/images/menu/soul.webp"
+    },
+    {
+        "id": "sb406",
+        "name": "Chicken Gyro",
+        "description": "Grilled lemon herb soy chicken topped with lettuce, diced tomato and vegan tahini sauce.",
+        "price": "16.00",
+        "image": "/images/menu/gyro.webp"
+    }
+]

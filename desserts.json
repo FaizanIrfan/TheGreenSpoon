@@ -1,0 +1,44 @@
+[
+    {
+        "id": "d601",
+        "name": "Vegan Shake",
+        "description": "Vegan ice cream blended with organic soy milk. Served with vegan ice cream.",
+        "price": "12.00",
+        "image": "/images/menu/shake.webp"
+    },
+    {
+        "id": "d602",
+        "name": "Unicorn Confetti Cake",
+        "description": "Tahitian vanilla bean cake with bursts of rainbow sprinkles baked in light and fluffy vanilla frosting.",
+        "price": "9.00",
+        "image": "/images/menu/unicorn.webp"
+    },
+    {
+        "id": "d603",
+        "name": "Peanut Butta Heaven",
+        "description": "Alternating layers of chocolate and vanilla cake filled with peanut butter mousse.",
+        "price": "10.00",
+        "image": "/images/menu/heaven.webp"
+    },
+    {
+        "id": "d604",
+        "name": "Death By Chocolate",
+        "description": "Chocolate cake with one layer of chocolate mousse and one layer of decadent chocolate frosting.",
+        "price": "10.00",
+        "image": "/images/menu/death.webp"
+    },
+    {
+        "id": "d605",
+        "name": "Peanut Butter Bomb",
+        "description": "Chocolate bundt cake topped with mounds of peanut butter mousse, encased in chocolate.",
+        "price": "10.00",
+        "image": "/images/menu/bomb.webp"
+    },
+    {
+        "id": "d606",
+        "name": "Lemon cake",
+        "description": "Lemon cake filled with lemon mousse and lemon curd. Served with brownie cheesecake.",
+        "price": "10.00",
+        "image": "/images/menu/lemon.webp"
+    }
+]
