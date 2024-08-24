@@ -49,19 +49,19 @@ app.get('/', (req, res) => {
 })
 
 app.get('/homepage', (req, res) => {
-    res.render('homepage');
+    res.render(__dirname + '/views/homepage.ejs');
 })
 
 app.get('/contact', (req, res) => {
-    res.render('contact');
+    res.render(__dirname + '/views/contact.ejs');
 })
 
 app.get('/about', (req, res) => {
-    res.render('about');
+    res.render(__dirname + '/views/about.ejs');
 })
 
 app.get('/menu', (req, res) => {
-    res.render('menu');
+    res.render(__dirname + '/views/menu.ejs');
 })
 
 // app.get('/menu/item', (req, res) => {
@@ -126,5 +126,3 @@ app.get('/menu', (req, res) => {
 // });
 
 module.exports = app;
-
-app.listen(4001);
