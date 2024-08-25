@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const ejs = require('ejs');
 const express = require('express');
-var cart = [];
+let cart = [];
 
 let app = express();
 app.set('view engine', 'ejs');
@@ -164,19 +164,8 @@ app.post('/cart', (req, res) => {
             }
         })
     }
-
-    // let newObj = {
-    //     id: req.body.id,
-    //     name: req.body.name,
-    //     description: req.body.description,
-    //     price: req.body.price,
-    //     image: req.body.image,
-    //     quantity: req.body.quantity,
-    //     totalPrice: totalPrice
-    // }
     cart.push(newObj);
     JSON.stringify(cart);
-    // console.log(cart);
     res.redirect('item-added');
 });
 
@@ -185,8 +174,55 @@ app.get("/item-added", (req, res) => {
 });
 
 app.get("/checkout", (req, res) => {
-    console.log(cart);
-    res.render(__dirname + '/views/checkout.ejs', cart);
+    var totalAmount = 0;
+    cart.forEach(item => {
+        totalAmount = totalAmount + parseInt(item.totalPrice);
+    });
+    let subTotal = {
+        amount: totalAmount
+    }
+    res.render(__dirname + '/views/checkout.ejs', { cart, subTotal });
 });
 
+app.get("/delete", (req, res) => {
+    const id = req.query.id;
+    let newCart = [];
+
+    cart.forEach(item => {
+        if (item.id != id) {
+            newCart.push(item);
+        }
+    });
+
+    cart = newCart;
+    res.redirect('checkout');
+})
+
+app.get("/subtract", (req, res) => {
+    cart.forEach(item => {
+        if (item.id == req.query.id) {
+            const quantity = parseInt(item.quantity);
+            console.log(quantity);
+            if ((quantity - 1) > 0) {
+                item.quantity = parseInt(item.quantity) - 1;
+                item.totalPrice = parseInt(item.quantity) * parseInt(item.price);
+            }
+        }
+
+    })
+    res.redirect('checkout');
+})
+
+app.get("/add", (req, res) => {
+    cart.forEach(item => {
+        if (item.id == req.query.id) {
+            item.quantity = parseInt(item.quantity) + 1;
+            item.totalPrice = parseInt(item.quantity) * parseInt(item.price);
+        }
+    })
+    res.redirect('checkout');
+})
+
 module.exports = app;
+
+app.listen(4000);

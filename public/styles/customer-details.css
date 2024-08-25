@@ -111,7 +111,10 @@ body {
     border: 1px solid black;
 }
 
-
+.add-more-items>a {
+    color: black;
+    text-decoration: none;
+}
 
 .add-more-items:hover {
     background-color: #eaeaea;
@@ -177,13 +180,4 @@ body {
     font-size: 14px;
     cursor: pointer;
     margin-top: 20px;
-}
-
-.right-section>a {
-    text-decoration: none;
-}
-
-.left-section>a {
-    text-decoration: none;
-    color: black;
 }
