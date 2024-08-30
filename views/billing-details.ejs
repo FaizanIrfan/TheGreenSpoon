@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ynj3swd.css">
+    <link rel="stylesheet" href="/styles/billing-details.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="/checkout"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back to Cart</a>
+
+        <h2>Checkout</h2>
+
+        <div>
+            <div class="left-section">
+
+                <div class="contact">
+
+                    <h3>CONTACT</h3>
+                    <div>
+                        <select id="countries" name="countries">
+                            <option value="pakistan" selected>Pakistan</option>
+                            <option value="india">India</option>
+                            <option value="america">America</option>
+                            <option value="canada">Canada</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                        <input class="space" placeholder="Phone number"></input>
+                    </div>
+                    <input class="email" placeholder="Email address for receipt"></input>
+                    <div>
+                        <input class="first_name" placeholder="First name"></input>
+                        <input class="space" placeholder="Last name"></input>
+                    </div>
+                    <span>By providing your phone number/email, you agree to receive order updates via text or email
+                        from The Green Spoon and our other partners on our behalf.</span>
+
+                </div>
+
+                <div class="payment">
+
+                    <h3>
+                        <div>Payment </div>
+                        <div>All transactions are secure and encrypted </div>
+                    </h3>
+
+                    <div class="card_info">
+
+                        <h4>Credit/Debit Card</h4>
+
+                        <select id="countries" name="countries">
+                            <option value="pakistan" selected>Pakistan</option>
+                            <option value="india">India</option>
+                            <option value="america">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="germany">Germany</option>
+                        </select>
+
+                        <div>
+                            <input type="number" id="card_number" placeholder="Card Number">
+                            <input type="number" id="month_year" placeholder="MM/YY">
+                            <input type="number" id="cvv" placeholder="CVV">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="create_account">
+                    <h3>CREATE ACCOUNT</h3>
+                    <div>
+                        <input type="checkbox" id="save_info" name="save_info">
+                        <div>
+                            <label for="save_info">Save your payment info for faster reordering at The Green Spoon and
+                                secure checkout with Square. </label><br><br>
+                            <span>By selecting to create an account, you agree to the green spoon Account Terms and
+                                Privacy Policy. You may receive promotional emails</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right-section">
+                <h3>FETCH YOUR ORDER</h3>
+                <div class="pickup-info">
+                    <div class="pickup-details"><i class="fas fa-map-marker-alt"></i> Pickup: 39 NORTH 6TH ST</div>
+                    <div class="time-details"><i class="fas fa-clock"></i>Within 45 - 50 minutes</div>
+                </div>
+
+                <input class="coupon-input" type="text" placeholder="Add a note for the seller">
+
+                <div class="order-summary">
+                    <div class="total-line"><span>Total</span><span>
+                            $<%= subTotal.amount %>.00
+                        </span></div>
+                    <div class="total-line"><span>GST</span><span>$0.00</span></div>
+                    <div class="total-line"><span>Estimated order total</span><span>
+                            $<%= subTotal.amount %>.00</span></div>
+                </div>
+
+                <a href="/order-placed">
+                    <div class="checkout-button">Place Order $<%= subTotal.amount %>.00</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

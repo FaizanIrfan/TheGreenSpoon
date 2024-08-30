@@ -1,0 +1,249 @@
+* {
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 970px;
+    padding: 40px;
+}
+
+.container>a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container>h2 {
+    margin-top: 58px;
+    font-size: 30px;
+}
+
+.container>div {
+    display: flex;
+}
+
+.left-section {
+    width: 55%;
+    margin-right: 120px;
+}
+
+.right-section {
+    width: 40%;
+}
+
+.contact,
+.payment {
+    margin-bottom: 40px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.contact h3,
+.payment h3,
+.create_account h3 {
+    padding-bottom: 20px;
+}
+
+.contact input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact select {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.contact div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space {
+    margin-left: 10px;
+}
+
+.contact span {
+    font-size: 11.5px;
+    color: #4e4e4e;
+    line-height: 1.4;
+}
+
+.contact input::placeholder,
+.payment input::placeholder {
+    color: rgb(99, 99, 99);
+}
+
+.card_info select,
+.card_info>div {
+    background-color: rgb(241, 241, 241);
+}
+
+.card_info>div {
+    height: 46.13px;
+}
+
+.payment input,
+.payment select {
+    border: 1px solid transparent;
+    background-color: rgb(241, 241, 241);
+    height: 100%;
+    width: 100%;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.payment input:focus,
+.payment select:focus {
+    outline: none;
+}
+
+.card_info {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.card_info h4 {
+    font-size: 13px;
+}
+
+.card_info div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_info div input {
+    width: 32%;
+}
+
+.create_account>div {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+    gap: 10px;
+}
+
+
+.create_account div label {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.create_account div span {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.contact input:focus,
+.create_account input:focus {
+    border-color: #a0a0a0;
+    outline: none;
+}
+
+.left-section h3,
+.right-section h3 {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.pickup-info {
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pickup-info .pickup-details,
+.pickup-info .time-details {
+    display: flex;
+    align-items: center;
+    font-size: 13.7px;
+    margin: 10px 0;
+}
+
+.pickup-info .pickup-details i,
+.pickup-info .time-details i {
+    margin-right: 10px;
+    color: #444;
+}
+
+.coupon-input {
+    width: 93%;
+    padding: 13px 13px 50px 13px;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    margin: 0px 0px 20px 0px;
+    font-size: 13.7px;
+    outline: none;
+}
+
+.coupon-input:focus {
+    border-color: gray;
+}
+
+.order-summary {
+    font-size: 13.7px;
+}
+
+.order-summary .total-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-summary .total-line span:last-child {
+    font-weight: bold;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.right-section>a {
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

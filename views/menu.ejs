@@ -71,6 +71,14 @@
     <main>
         <div class="menu">OUR MENU</div>
 
+        <div class="categories">
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="#starters">Starters</a>
+            <a href="#sandwiches">Sandwiches and Burgers</a>
+            <a href="#maincourse">Main Course</a>
+            <a href="#desserts">Desserts</a>
+        </div>
+
         <div class="container">
 
             <div id="starters">TGS</div>
@@ -630,23 +638,11 @@
 
         <div style="font-size: 10px;">
             © 2024 The Green Spoon - All Rights Reserved <br>
-            Web and Menu designs by Eldric Thornwood
+            Web and Menu designs by Faizan
         </div>
     </footer>
 
-    <script>
-        const open_btn = document.querySelector('.open-btn');
-        const close_btn = document.querySelector('.close-btn');
-        const nav = document.querySelector('.nav');
-
-        open_btn.addEventListener('click', () => {
-            nav.classList.add('visible');
-        });
-
-        close_btn.addEventListener('click', () => {
-            nav.classList.remove('visible');
-        });
-    </script>
+    <script src="scripts/menu.js"></script>
 
 </body>
 

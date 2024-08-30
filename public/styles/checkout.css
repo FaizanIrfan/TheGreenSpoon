@@ -111,8 +111,6 @@ body {
     border: 1px solid black;
 }
 
-
-
 .add-more-items:hover {
     background-color: #eaeaea;
 }
@@ -151,6 +149,11 @@ body {
     border: 1px solid #e0e0e0;
     margin: 0px 0px 20px 0px;
     font-size: 13.7px;
+    outline: none;
+}
+
+.coupon-input:focus{
+    border-color: gray;
 }
 
 .order-summary {

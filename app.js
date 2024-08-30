@@ -40,23 +40,23 @@ fs.readFile(path.join(__dirname, 'desserts.json'), 'utf8', (err, data) => {
 
 app.get('/', (req, res) => {
     res.redirect('homepage');
-})
+});
 
 app.get('/homepage', (req, res) => {
     res.render(__dirname + '/views/homepage.ejs');
-})
+});
 
 app.get('/contact', (req, res) => {
     res.render(__dirname + '/views/contact.ejs');
-})
+});
 
 app.get('/about', (req, res) => {
     res.render(__dirname + '/views/about.ejs');
-})
+});
 
 app.get('/menu', (req, res) => {
     res.render(__dirname + '/views/menu.ejs');
-})
+});
 
 app.get('/menu/item', (req, res) => {
     var count = 0;
@@ -91,7 +91,7 @@ app.get('/menu/item', (req, res) => {
         })
     }
     res.render(__dirname + '/views/item-detail.ejs', item);
-})
+});
 
 app.post('/cart', (req, res) => {
 
@@ -165,15 +165,14 @@ app.post('/cart', (req, res) => {
         })
     }
     cart.push(newObj);
-    JSON.stringify(cart);
     res.redirect('item-added');
 });
 
-app.get("/item-added", (req, res) => {
+app.get('/item-added', (req, res) => {
     res.render(__dirname + '/views/item-added.ejs');
 });
 
-app.get("/checkout", (req, res) => {
+app.get('/checkout', (req, res) => {
     var totalAmount = 0;
     cart.forEach(item => {
         totalAmount = totalAmount + parseInt(item.totalPrice);
@@ -184,7 +183,7 @@ app.get("/checkout", (req, res) => {
     res.render(__dirname + '/views/checkout.ejs', { cart, subTotal });
 });
 
-app.get("/delete", (req, res) => {
+app.get('/delete', (req, res) => {
     const id = req.query.id;
     let newCart = [];
 
@@ -196,24 +195,26 @@ app.get("/delete", (req, res) => {
 
     cart = newCart;
     res.redirect('checkout');
-})
+});
 
-app.get("/subtract", (req, res) => {
-    cart.forEach(item => {
+app.get('/subtract', (req, res) => {
+    cart = cart.filter(item => {
         if (item.id == req.query.id) {
             const quantity = parseInt(item.quantity);
-            console.log(quantity);
             if ((quantity - 1) > 0) {
-                item.quantity = parseInt(item.quantity) - 1;
-                item.totalPrice = parseInt(item.quantity) * parseInt(item.price);
+                item.quantity = quantity - 1;
+                item.totalPrice = item.quantity * parseFloat(item.price);
+                return true;
+            } else {
+                return false;
             }
         }
-
-    })
+        return true;
+    });
     res.redirect('checkout');
-})
+});
 
-app.get("/add", (req, res) => {
+app.get('/add', (req, res) => {
     cart.forEach(item => {
         if (item.id == req.query.id) {
             item.quantity = parseInt(item.quantity) + 1;
@@ -221,6 +222,24 @@ app.get("/add", (req, res) => {
         }
     })
     res.redirect('checkout');
+});
+
+app.get('/billing-details', (req, res) => {
+    var totalAmount = 0;
+    cart.forEach(item => {
+        totalAmount = totalAmount + parseInt(item.totalPrice);
+    });
+    let subTotal = {
+        amount: totalAmount
+    }
+    res.render(__dirname + '/views/billing-details.ejs', { cart, subTotal });
+});
+
+app.get('/order-placed', (req, res) => {
+    res.render(__dirname + '/views/order-placed.ejs');
 })
 
-module.exports = app;
+app.get('/rating', (req, res) => {
+    res.render(__dirname + '/views/rating.ejs');
+})
+
