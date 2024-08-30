@@ -33,6 +33,10 @@ header a:hover {
     color: rgb(73, 73, 73);
 }
 
+.margin {
+    height: 45.5px;
+}
+
 .body-start {
     background-image: url(/images/homepage/background.png);
     background-size: cover;
@@ -197,7 +201,7 @@ header a:hover {
     font-size: 12px;
 }
 
-.review > div > .pimg{
+.review>div>.pimg {
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -315,17 +319,17 @@ footer div a {
     margin-bottom: 10px;
 }
 
-.nav .icon:hover{
+.nav .icon:hover {
     color: grey;
 }
 
-.content > div > p > a {
+.content>div>p>a {
     color: rgb(0, 75, 0);
     text-decoration: none;
     font-weight: 500;
 }
 
-.content > div > a{
+.content>div>a {
     text-decoration: none;
     color: black;
 }

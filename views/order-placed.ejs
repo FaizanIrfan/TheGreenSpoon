@@ -8,7 +8,7 @@
     <title>Order Success</title>
 </head>
 
-<body>
+<body onload="insertCurrentDate()">
 
     <table class="pc-project-container" align="center" width="600" style="width: 600px; max-width: 600px;" border="0"
         cellpadding="0" cellspacing="0" role="presentation">
@@ -296,8 +296,8 @@
                                                                                                                                                                             on</span>
                                                                                                                                                                     </div>
                                                                                                                                                                     <div>
-                                                                                                                                                                        <span>June
-                                                                                                                                                                            18</span>
+                                                                                                                                                                        <span
+                                                                                                                                                                            id="currentDate"></span>
                                                                                                                                                                     </div>
                                                                                                                                                                 </div>
                                                                                                                                                             </td>
@@ -545,11 +545,10 @@
                                                                                                                                                                             style="padding: 0px 0px 24px 0px; text-align: center; font-weight: normal; line-height: 1;">
                                                                                                                                                                             <a class="pc-w620-padding-12-24-12-24"
                                                                                                                                                                                 style="display: inline-block; box-sizing: border-box; border-radius: 500px 500px 500px 500px; background-color: #27ae60; padding: 12px 24px 12px 24px; width: 230px; font-family: 'Urbanist', Arial, Helvetica, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; letter-spacing: -0px; color: #ffffff; vertical-align: top; text-align: center; text-align-last: center; text-decoration: none; -webkit-text-size-adjust: none;"
-                                                                                                                                                                                href="/rating"
-                                                                                                                                                                                target="_blank"><span
-                                                                                                                                                                                    style="display: block;"><span>View
-                                                                                                                                                                                        Your
-                                                                                                                                                                                        Order</span></span></a>
+                                                                                                                                                                                href="/rating"><span
+                                                                                                                                                                                    style="display: block;"><span>Back
+                                                                                                                                                                                        to
+                                                                                                                                                                                        homepage</span></span></a>
                                                                                                                                                                         </th>
                                                                                                                                                                     </tr>
                                                                                                                                                                 </table>
@@ -928,6 +927,8 @@
             </td>
         </tr>
     </table>
+
+    <script src="/scripts/order-placed.js"></script>
 </body>
 
 </html>

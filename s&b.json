@@ -15,10 +15,10 @@
     },
     {
         "id": "sb403",
-        "name": "Pulled pork sandwich",
-        "description": "Shredded smoked BBQ soy pork, sautéed with caramelized onions and sliced pickles",
+        "name": "Breakfast Sandwich ",
+        "description": "Two organic vegan eggs on ciabatta bread with cheddar cheese. Side of tater tots.",
         "price": "15.00",
-        "image": "/images/menu/pulled.webp"
+        "image": "/images/menu/breakfast.webp"
     },
     {
         "id": "sb404",

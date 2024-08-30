@@ -44,6 +44,11 @@ html {
     z-index: 1;
 }
 
+.wrapper > a{
+    text-decoration: none;
+    color: black;
+}
+
 .wrapper .title {
     font-weight: bold;
     font-size: 0.36rem;
@@ -92,7 +97,7 @@ html {
 }
 
 textarea {
-    border: none;
+    border: 1px solid #e0e0e0;
     resize: none;
     width: 100%;
     padding: 0.2rem;
@@ -100,7 +105,6 @@ textarea {
     font-family: inherit;
     line-height: 1.5;
     border-radius: 0.2rem;
-    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.8);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -109,6 +113,8 @@ textarea::placeholder {
 }
 
 textarea:focus {
+    border-color: gray;
+    outline: none;
     outline-color: #ffcc33;
 }
 
