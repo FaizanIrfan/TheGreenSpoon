@@ -244,5 +244,3 @@ app.get('/rating', (req, res) => {
 })
 
 module.exports = app;
-
-app.listen(4000);
