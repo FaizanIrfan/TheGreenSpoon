@@ -243,3 +243,4 @@ app.get('/rating', (req, res) => {
     res.render(__dirname + '/views/rating.ejs');
 })
 
+module.exports = app;
