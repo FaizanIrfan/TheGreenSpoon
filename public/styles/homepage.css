@@ -33,8 +33,8 @@ header a:hover {
     color: rgb(73, 73, 73);
 }
 
-.margin {
-    height: 45.5px;
+.margin-top {
+    height: 65.6px;
 }
 
 .body-start {
@@ -221,7 +221,7 @@ header a:hover {
 }
 
 .social {
-    background-image: url(/images/homepage/background-2.png);
+    background-image: url(/images/homepage/environment.png);
     background-size: cover;
     background-attachment: fixed;
     flex-direction: column;
