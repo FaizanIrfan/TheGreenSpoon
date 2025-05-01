@@ -26,6 +26,3 @@ Welcome to **The Green Spoon**, a fully responsive and dynamic web platform desi
 | HTML5, CSS3, JavaScript | Node.js, Express.js | Local Files | GitHub Pages / Render / Vercel |
 
 ---
-
-## 🗂️ Project Structure
-
