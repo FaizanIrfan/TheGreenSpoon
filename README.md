@@ -14,8 +14,6 @@ Welcome to **The Green Spoon**, a fully responsive and dynamic web platform desi
 - 🛒 **Online Ordering System** – Customers can place orders directly through the website.
 - 📦 **Order Confirmation Page** – A highly professional confirmation interface for placed orders.
 - 💬 **Testimonials Section** – Displays real feedback from satisfied customers.
-- 📍 **Responsive Design** – Fully mobile-friendly and optimized for all devices.
-- ✉️ **Contact Form** – For reservations, inquiries, and feedback.
 
 ---
 
