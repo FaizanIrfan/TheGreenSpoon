@@ -4,7 +4,7 @@ Welcome to **The Green Spoon**, a fully responsive and dynamic web platform desi
 
 ## 🚀 Live Demo
 
-[🔗 View Live Site](#) &nbsp;*(https://the-green-spoon-byf.vercel.app/)*
+[🔗 View Live Site](https://the-green-spoon-byf.vercel.app/) &nbsp;
 
 ---
 
